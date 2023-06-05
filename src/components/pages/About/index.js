@@ -1,8 +1,9 @@
 import React from 'react';
+import Style from '../About/about.module.css';
 
 export default function About() {
   return (
-    <div>
+    <div className={Style.grey}>
       <h1>About Me</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
