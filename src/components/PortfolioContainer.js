@@ -4,6 +4,7 @@ import Resume from './pages/Resume/index';
 import About from './pages/About/index';
 import Contact from './pages/Contact/index';
 import Portfolio from './pages/Portfolio/index';
+import Footer from './Footer';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -22,13 +23,17 @@ export default function PortfolioContainer() {
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
-
+  
   return (
     <div>
       {/* // TODO: Add a comment describing what we are passing as props */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* // TODO: Add a comment explaining what is happening on the following line */}
       {renderPage()}
+      <Footer />
+
     </div>
-  );
+
+);
+
 }
