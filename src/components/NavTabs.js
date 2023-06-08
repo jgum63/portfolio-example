@@ -34,7 +34,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Portfolio
         </a>
       </li>
-      <li className="nav-item">
+      <li >
         <a
           href="#contact"
 

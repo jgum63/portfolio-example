@@ -1,3 +1,4 @@
-.grey {
-    background-color: grey;
+.block {
+    /* display: block; */
+    border: 2pt black;
 }
